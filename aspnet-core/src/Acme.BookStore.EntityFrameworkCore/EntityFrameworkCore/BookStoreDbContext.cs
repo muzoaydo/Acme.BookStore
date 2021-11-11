@@ -13,6 +13,7 @@ using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.TenantManagement;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Acme.BookStore.Books;
+using Volo.Abp.EntityFrameworkCore.Modeling;
 
 namespace Acme.BookStore.EntityFrameworkCore
 {

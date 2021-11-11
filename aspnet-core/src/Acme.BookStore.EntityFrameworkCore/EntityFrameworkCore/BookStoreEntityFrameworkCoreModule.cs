@@ -10,6 +10,7 @@ using Volo.Abp.Modularity;
 using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace Acme.BookStore.EntityFrameworkCore
 {
@@ -45,7 +46,7 @@ namespace Acme.BookStore.EntityFrameworkCore
             {
                 /* The main point to change your DBMS.
                  * See also BookStoreMigrationsDbContextFactory for EF Core tooling. */
-                options.UseSqlServer();
+                options.UseNpgsql();
             });
         }
     }
